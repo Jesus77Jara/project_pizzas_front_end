@@ -19,11 +19,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+
 
 
 
 
   <link rel="stylesheet" href="css/styles.css" />
+  
 
 
 </head>
@@ -65,6 +68,9 @@
 
             </figcaption>
           </figure>
+          <button class="button" value="1">
+            Añadir al carrito <spam class="fa-solid fa-cart-shopping"></spam>
+          </button>
         </div>
       </li>
 
@@ -80,6 +86,9 @@
 
             </figcaption>
           </figure>
+          <button class="button" value="2">
+            Añadir al carrito <spam class="fa-solid fa-cart-shopping"></spam>
+          </button>
         </div>
       </li>
       <li>
@@ -93,6 +102,9 @@
 
             </figcaption>
           </figure>
+          <button class="button" value="3">
+            Añadir al carrito <spam class="fa-solid fa-cart-shopping"></spam>
+          </button>
         </div>
       </li>
       <li>
@@ -107,6 +119,9 @@
 
             </figcaption>
           </figure>
+          <button class="button" value="4">
+            Añadir al carrito <spam class="fa-solid fa-cart-shopping"></spam>
+          </button>
         </div>
       </li>
 
@@ -122,6 +137,9 @@
 
             </figcaption>
           </figure>
+          <button class="button" value="5">
+            Añadir al carrito <spam class="fa-solid fa-cart-shopping"></spam> 
+          </button>
         </div>
       </li>
       <li>
@@ -133,21 +151,33 @@
               <p>2500$
               </p>
               <time>23/05/22</time>
-
-
             </figcaption>
           </figure>
+          <button class="button" value="6">
+            Añadir al carrito <spam class="fa-solid fa-cart-shopping"></spam>
+          </button>
         </div>
       </li>
-
-
-
     </ul>
 
   </div>
   <footer>
+    <div id="link">
+    <a href="login.html">Acceso Privado</a>
     <p>&copy;2022</p>
- </footer>
+  </div>
+  </footer>
+  <script>
+   var countButtons= document.querySelectorAll("button").length;
+   for( var i= 0; i<countButtons; i++){
+    document.querySelectorAll("button")[i].addEventListener("click", schowValue);
+   }
+function schowValue(){
+  console.log(this.value)
+
+}
+
+  </script>
 </body>
 
 </html>
